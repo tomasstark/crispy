@@ -8,11 +8,11 @@
   function enqueue_scripts() {
     wp_enqueue_script( 'jquery', '', '', '', true );
 
-    // jquery plugins
-    wp_enqueue_script( 'plugins', get_bloginfo( 'template_url' ) . '/js/plugins.min.js', 'jquery', '1', true );
+    // modernizr
+    wp_enqueue_script( 'plugins', get_bloginfo( 'template_url' ) . '/js/html5shiv.min.js', '', '', false );
 
-    // site wide scripts
-    wp_enqueue_script( 'scripts', get_bloginfo( 'template_url' ) . '/js/main.min.js', 'jquery', '1', true );
+    // build script
+    wp_enqueue_script( 'plugins', get_bloginfo( 'template_url' ) . '/js/build.min.js', 'jquery', '', true );
   }
 
   add_action( 'wp_enqueue_scripts', 'enqueue_styles' );
