@@ -1,0 +1,116 @@
+.article {
+    max-width: 840px;
+    margin: 0 auto;
+
+    header {
+        margin: 84px auto 21px;
+    }
+
+    .meta {
+        margin-bottom: 21px;
+        font-size: 1.6em;
+        color: @alt-font-color;
+    }
+
+    header, footer, h1, h2, h3, h4, h5, h6, p, ul, ol, time, code {
+        max-width: 640px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h1 {
+        margin: 0 auto 42px;
+        line-height: 1.2;
+        font-weight: bold;
+        font-size: 4.2em;
+        color: @heading-font-color;
+    }
+
+    h2 {
+        margin: 0 auto 25px;
+        font-weight: 700;
+        font-size: 2.5em;
+    }
+
+    h3 {
+        margin: 0 auto 10px;
+        font-weight: 700;
+        font-size: 2.1em;
+    }
+
+    h4 {
+        margin: 10px auto 8px;
+        font-size: 2em;
+        text-transform: uppercase;
+    }
+
+    h2, h3, h4 {
+        line-height: 1.4;
+    }
+
+    p {
+        margin: 0 auto 21px;
+        line-height: 1.7;
+        letter-spacing: 0.2px;
+        font-size: 2.1em;
+        color: @site-font-color;
+    }
+
+    strong {
+        font-weight: 700;
+    }
+
+    ul, ol {
+        margin: 0 auto 21px 170px;
+    }
+
+    ul {
+        list-style-type: circle;
+    }
+
+    ol {
+        list-style-type: decimal;
+    }
+
+    ul, ol {
+        li {
+            line-height: 2;
+            font-size: 2.1em;
+            letter-spacing: 0.2px;
+            color: @site-font-color;
+        }
+    }
+
+    blockquote {
+        width: 100%;
+        margin: 40px auto;
+        text-align: center;
+
+        p {
+            max-width: 100%;
+            font-weight: 300;
+            font-style: italic;
+            font-size: 2.5em;
+        }
+    }
+
+    a {
+        color: @site-font-color;
+        text-decoration: underline;
+
+        &:visited {
+            color: @alt-font-color;
+        }
+
+        &:active {
+            position: relative;
+            top: 1px;
+        }
+    }
+
+    footer {
+        margin: 42px auto 42px;
+        font-size: 1.6em;
+        color: @alt-font-color;
+    }
+}

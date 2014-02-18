@@ -1,5 +1,6 @@
 body {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Merriweather', Helvetica, Arial, sans-serif;
+    font-size: 0.625em;
     color: @site-font-color;
     background-color: @bg-color;
 }
@@ -8,3 +9,17 @@ body {
     max-width: 960px;
     margin: 0 auto;
 }
+
+::selection {
+    background-color: #444;
+    color: #fff;
+}
+
+::-moz-selection {
+    background-color: #444;
+    color: #fff;
+}
+
+@import "header";
+@import "article";
+@import "footer";

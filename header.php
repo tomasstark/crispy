@@ -20,11 +20,11 @@
     <body <?php body_class(); ?>>
         <div class="main-container">
             <header class="site-header">
-                <div class="logo">
+                <?php /*<div class="logo">
                     <a href="<?php bloginfo( 'url' ); ?>">
                         <img src="<?php bloginfo( 'template_url' ); ?>/img/logo.png" alt="<?php bloginfo( 'name' ); ?>">
                     </a>
-                </div><!-- /.logo -->
+                </div><!-- /.logo -->*/ ?>
             </header>
 
             
