@@ -1,21 +1,28 @@
 <?php get_header(); ?>
 
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-    <article class="article">
+<?php
+    function limit_words( $string, $word_limit ) {
+        $words = explode( ' ', $string );
+        return implode( ' ', array_splice( $words, 0, $word_limit ) );
+    }
+?>
+
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); global $post; ?>
+    <article class="index article">
         <header>
             <div class="meta">
                 Written on <time datetime="<?php echo get_the_date( 'Y-m-d' ); ?>"><?php the_date(); ?></time>
             </div>
 
-            <h1><?php the_title(); ?></h1>
+            <h1><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h1>
         </header>
 
-        <?php the_content( 'more' ); ?>
-
-        <footer>
-            <span class="author">by <?php the_author(); ?></span>
-        </footer>
+        <p>
+            <?php echo limit_words( get_the_excerpt(), 20 ); ?><?php if( str_word_count( get_the_excerpt() ) > 20 ) { ?>...<?php } ?>
+        </p>
     </article>
+
+    <hr>
 <?php endwhile; ?>
     
     <ul class="pagination">
