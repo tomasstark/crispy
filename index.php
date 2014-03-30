@@ -17,9 +17,7 @@
             <h1><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h1>
         </header>
 
-        <p>
-            <?php echo limit_words( get_the_excerpt(), 20 ); ?><?php if( str_word_count( get_the_excerpt() ) > 20 ) { ?>...<?php } ?>
-        </p>
+        <p><?php echo limit_words( get_the_excerpt(), 20 ); ?><?php if( str_word_count( get_the_excerpt() ) > 20 ) { ?>...<?php } ?></p>
     </article>
 
     <hr>
