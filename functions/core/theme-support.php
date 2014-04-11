@@ -5,4 +5,9 @@
 
     add_theme_support( 'post-thumbnails' );
     add_theme_support( 'menus' );
+    add_theme_support( 'custom-header', array(
+        'width' => 150,
+        'height' => 150,
+        'header-text' => false
+    ) );
 ?>

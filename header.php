@@ -20,11 +20,12 @@
     <body <?php body_class(); ?>>
         <div class="main-container">
             <header class="site-header">
-                <?php /*<div class="logo">
-                    <a href="<?php bloginfo( 'url' ); ?>">
-                        <img src="<?php bloginfo( 'template_url' ); ?>/img/logo.png" alt="<?php bloginfo( 'name' ); ?>">
-                    </a>
-                </div><!-- /.logo -->*/ ?>
+                <a href="<?php bloginfo( 'url' ); ?>">
+                    <?php if( get_header_image() ) { ?>
+                        <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
+                    <?php } ?>
+                </a>
+                <div class="blog-title"><?php bloginfo( 'name' ); ?></div>
             </header>
 
             

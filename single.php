@@ -11,10 +11,6 @@
         </header>
 
         <?php the_content( 'more' ); ?>
-
-        <footer>
-            <span class="author">by <?php the_author(); ?></span>
-        </footer>
     </article>
 <?php endwhile; ?>
     
