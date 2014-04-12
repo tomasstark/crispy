@@ -23,8 +23,8 @@
                 <a href="<?php bloginfo( 'url' ); ?>" title="<?php bloginfo( 'name' ); ?>">
                     <?php if( get_header_image() ) { ?>
                         <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
-                        <span><?php bloginfo( 'name' ); ?></span>
                     <?php } ?>
+                    <span><?php bloginfo( 'name' ); ?></span>
                 </a>
             </header>
 
