@@ -20,12 +20,12 @@
     <body <?php body_class(); ?>>
         <div class="main-container">
             <header class="site-header">
-                <a href="<?php bloginfo( 'url' ); ?>">
+                <a href="<?php bloginfo( 'url' ); ?>" title="<?php bloginfo( 'name' ); ?>">
                     <?php if( get_header_image() ) { ?>
                         <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
+                        <span><?php bloginfo( 'name' ); ?></span>
                     <?php } ?>
                 </a>
-                <div class="blog-title"><?php bloginfo( 'name' ); ?></div>
             </header>
 
             
