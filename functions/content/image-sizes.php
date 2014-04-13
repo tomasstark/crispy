@@ -10,4 +10,14 @@
     }
 
     add_action( 'after_setup_theme', 'set_custom_image_sizes' );
+
+    add_filter( 'image_size_names_choose', 'crispy_custom_sizes' );
+
+    function crispy_custom_sizes() {
+        return array(
+            'thumb-img' => __('Floating'),
+            'center-img' => __('Big'),
+            'full' => __('Full Size')
+        );
+    }
 ?>

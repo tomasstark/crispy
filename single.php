@@ -12,12 +12,12 @@
 
         <?php the_content( 'more' ); ?>
     </article>
-<?php endwhile; ?>
-    
+
     <ul class="pagination">
-        <li><?php previous_posts_link( 'Previous' ); ?></li>
-        <li><?php next_posts_link( 'Next' ); ?></li>
+        <li><?php previous_post_link( '%link', 'Previous' ); ?></li>
+        <li><?php next_post_link( '%link', 'Next' ); ?></li>
     </ul>
+<?php endwhile; ?>
 
 <?php endif; ?>
 
