@@ -13,10 +13,12 @@
         <?php the_content( 'more' ); ?>
     </article>
 
-    <ul class="pagination">
-        <li><?php previous_post_link( '%link', 'Previous' ); ?></li>
-        <li><?php next_post_link( '%link', 'Next' ); ?></li>
-    </ul>
+    <div class="pagination">
+        <ul>
+            <li class="prev"><?php if( get_previous_post_link() ) { ?>Previous <span><?php previous_post_link( '%link', '%title' ); ?></span><?php } ?></li>
+            <li class="next"><?php if( get_next_post_link() ) { ?>Next <span><?php next_post_link( '%link', '%title' ); ?><?php } ?></span></li>
+        </ul>
+    </div>
 <?php endwhile; ?>
 
 <?php endif; ?>

@@ -23,9 +23,9 @@
     <hr>
 <?php endwhile; ?>
     
-    <ul class="pagination">
-        <li><?php previous_posts_link( 'Previous' ); ?></li>
-        <li><?php next_posts_link( 'Next' ); ?></li>
+    <ul class="pagination clearfix">
+        <li class="prev"><?php previous_posts_link( 'Previous' ); ?></li>
+        <li class="next"><?php next_posts_link( 'Next' ); ?></li>
     </ul>
 
 <?php endif; ?>

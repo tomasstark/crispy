@@ -15,7 +15,7 @@
     }
 
     header {
-        margin: 84px auto 21px;
+        margin: 44px auto 21px;
     }
 
     .meta {
@@ -152,6 +152,54 @@
         margin: 42px auto 42px;
         font-size: 1.6em;
         color: @alt-font-color;
+    }
+}
+
+.pagination {
+    max-width: 640px;
+    margin: 20px auto 0;
+
+    li {
+        font-size: 2.5em;
+
+        &.next {
+            float: right;
+        }
+
+        &.prev {
+            float: left;
+        }
+    }
+
+    a {
+        color: @heading-font-color;
+        text-decoration: none;
+    }
+}
+
+.single .pagination {
+    max-width: 840px;
+    margin: 40px auto 0;
+    padding-top: 40px;
+    border-top: 1px solid #eaebf1;
+
+    ul {
+        max-width: 640px;
+        margin: 0 auto;
+    }
+
+    li {
+        width: 45%;
+        font-size: 1.8em;
+        color: @alt-font-color;
+
+        span {
+            display: block;
+            margin-top: 5px;
+            line-height: 1.4;
+            font-weight: bold;
+            font-size: 1.35em;
+        }
     }
 }
 
