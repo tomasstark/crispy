@@ -6,7 +6,7 @@
         padding-bottom: 20px;
 
         header {
-            margin-top: 45px;
+            margin-top: 40px;
         }
 
         p {
@@ -15,12 +15,12 @@
     }
 
     header {
-        margin: 44px auto 21px;
+        margin: 40px auto 20px;
     }
 
     .meta {
-        margin-bottom: 21px;
-        font-size: 1.8em;
+        margin-bottom: 20px;
+        font-size: 18px;
         color: @alt-font-color;
     }
 
@@ -31,38 +31,41 @@
     }
 
     h1 {
-        margin: 0 auto 42px;
+        margin: 0 auto 40px;
         line-height: 1.2;
         font-weight: bold;
-        font-size: 4.6em;
+        font-size: 46px;
         color: @heading-font-color;
 
         a {
             color: @heading-font-color;
             text-decoration: none;
         }
+
     }
+
 
     &.index h1 {
         margin-bottom: 20px;
-        font-size: 3.6em;
+        font-size: 36px;
     }
 
     h2 {
-        margin: 0 auto 25px;
+        margin: 40px auto 20px;
         font-weight: 700;
-        font-size: 2.4em;
+        font-size: 28px;
     }
 
     h3 {
-        margin: 0 auto 10px;
+        margin: 40px auto 10px;
         font-weight: 700;
-        font-size: 2.1em;
+        font-size: 21px;
     }
 
     h4 {
-        margin: 10px auto 8px;
-        font-size: 2em;
+        margin: 20px auto 10px;
+        font-size: 16px;
+        font-weight: 700;
         text-transform: uppercase;
     }
 
@@ -71,10 +74,10 @@
     }
 
     p {
-        margin: 0 auto 21px;
+        margin: 0 auto 20px;
         line-height: 1.7;
         letter-spacing: 0.2px;
-        font-size: 1.8em;
+        font-size: 18px;
         color: @site-font-color;
 
         a {
@@ -97,7 +100,7 @@
     }
 
     ul, ol {
-        margin: 0 auto 21px 170px;
+        margin: 0 auto 20px 160px;
     }
 
     ul {
@@ -111,7 +114,7 @@
     ul, ol {
         li {
             line-height: 2;
-            font-size: 2.1em;
+            font-size: 21px;
             letter-spacing: 0.2px;
             color: @site-font-color;
         }
@@ -149,8 +152,8 @@
     }
 
     footer {
-        margin: 42px auto 42px;
-        font-size: 1.6em;
+        margin: 40px auto 40px;
+        font-size: 16px;
         color: @alt-font-color;
     }
 }
@@ -158,9 +161,13 @@
 .pagination {
     max-width: 640px;
     margin: 20px auto 0;
+    padding: 0 0 40px;
+
 
     li {
-        font-size: 2.5em;
+        line-height: 1.4;
+        font-weight: bold;
+        font-size: 21px;
 
         &.next {
             float: right;
@@ -178,10 +185,10 @@
 }
 
 .single .pagination {
-    max-width: 840px;
     margin: 40px auto 0;
-    padding-top: 40px;
-    border-top: 1px solid #eaebf1;
+    padding-top: 20px;
+    border-top: 1px solid @line-color;
+    overflow: hidden;
 
     ul {
         max-width: 640px;
@@ -190,7 +197,8 @@
 
     li {
         width: 45%;
-        font-size: 1.8em;
+        font-size: 18px;
+        font-weight: normal;
         color: @alt-font-color;
 
         span {
@@ -198,7 +206,7 @@
             margin-top: 5px;
             line-height: 1.4;
             font-weight: bold;
-            font-size: 1.35em;
+            font-size: 21px;
         }
     }
 }
@@ -207,5 +215,5 @@ hr {
     max-width: 640px;
     height: 1px;
     border: 0;
-    border-bottom: 1px solid #eaebf1;
+    border-bottom: 1px solid @line-color;
 }
