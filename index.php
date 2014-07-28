@@ -24,8 +24,8 @@
 <?php endwhile; ?>
     
     <ul class="pagination clearfix">
-        <li class="prev"><?php previous_posts_link( 'Previous' ); ?></li>
-        <li class="next"><?php next_posts_link( 'Next' ); ?></li>
+        <li class="prev"><?php previous_posts_link( 'Newer articles' ); ?></li>
+        <li class="next"><?php next_posts_link( 'Older articles' ); ?></li>
     </ul>
 
 <?php endif; ?>
